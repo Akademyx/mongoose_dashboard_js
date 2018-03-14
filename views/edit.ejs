@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+</head>
+<body>
+    <form action="/mongooses/<%= type.id%>" method="POST">
+        <p>Animal: <input name="animal" value="<%= type.animal %>"></p>
+        <p>Description: <textarea rows="6" cols="60" name="description" value="<%= type.description %>"><%= type.description %></textarea></p>
+        <button>Done Editing</button>
+    </form>
+</body>
+</html>
